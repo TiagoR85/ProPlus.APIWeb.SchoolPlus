@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "SchoolPlusDbContext": "Server=Rodrigues;Database=SchoolPlusDb;Trusted_Connection=True;"
+  }
+}
