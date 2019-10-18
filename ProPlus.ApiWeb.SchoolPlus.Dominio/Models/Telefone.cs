@@ -7,8 +7,10 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 {
     public class Telefone : ITelefone
     {
-        public int TelefoneId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Enums.TipoTelefone TipoTelefone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string NroTelefone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int TelefoneId { get; set; }
+        public Enums.TipoTelefone TipoTelefone { get; set; }
+        public string NroTelefone { get; set; }
+        public int InstituicaoID { get; set; }
+        public int UsuarioID { get; set; }
     }
 }

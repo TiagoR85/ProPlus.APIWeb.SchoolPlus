@@ -7,7 +7,9 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 {
     public class Email : IEmail
     {
-        public int EmailId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string EnderecoEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int EmailId { get; set; }
+        public string EnderecoEmail { get; set; }
+        public int InstituicaoID { get; set; }
+        public int UsuarioID { get; set; }
     }
 }

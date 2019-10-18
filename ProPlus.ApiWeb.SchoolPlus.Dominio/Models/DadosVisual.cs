@@ -7,7 +7,10 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 {
     public class DadosVisual : IDadosVisual
     {
-        public int DadosVisualID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string CaminhoRelativo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int VisualID { get; set; }
+        public int DadosVisualID { get; set; }
+        public string CaminhoRelativo { get; set; }
+        public int UsuarioID { get; set; }
+        public int ClaID { get; set; }
     }
 }

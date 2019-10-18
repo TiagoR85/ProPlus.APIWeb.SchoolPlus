@@ -7,7 +7,8 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 {
     public class Avatar : IAvatar
     {
-        public IPessoa Usuario { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IList<IDadosVisual> Imagens { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int AvatarID { get; set; }
+        public IPessoa Usuario { get; set; }
+        public IList<IDadosVisual> Imagens { get; set; }
     }
 }

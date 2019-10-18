@@ -4,6 +4,7 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Interfaces
 {
     public interface IDadosGamefication
     {
+        public int UsuarioID { get; set; }
         public int GameficationID { get; set; }
         public IList<IAvatar> Avatares { get; set; }
         public IList<IEquipe> Equipes { get; set; }

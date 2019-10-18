@@ -7,6 +7,7 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 {
     public class Aluno : IAluno
     {
-        public IPessoa Usuario { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int AlunoID { get; set; }
+        public IPessoa Usuario { get; set; }
     }
 }

@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlus.APIWeb.SchoolPlus", "ProPlus.APIWeb.SchoolPlus\ProPlus.APIWeb.SchoolPlus.csproj", "{F33A1050-A166-4E9B-ABAA-483341801FCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProPlus.APIWeb.SchoolPlus", "ProPlus.APIWeb.SchoolPlus\ProPlus.APIWeb.SchoolPlus.csproj", "{F33A1050-A166-4E9B-ABAA-483341801FCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlus.ApiWeb.SchoolPlus.Dominio", "ProPlus.ApiWeb.SchoolPlus.Dominio\ProPlus.ApiWeb.SchoolPlus.Dominio.csproj", "{56F8C73E-E9AB-4390-AA0A-1A711B871479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProPlus.ApiWeb.SchoolPlus.Dominio", "ProPlus.ApiWeb.SchoolPlus.Dominio\ProPlus.ApiWeb.SchoolPlus.Dominio.csproj", "{56F8C73E-E9AB-4390-AA0A-1A711B871479}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity", "ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity\ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity.csproj", "{A69CEE77-BB4E-4216-A217-5458049BA0A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity", "ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity\ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity.csproj", "{A69CEE77-BB4E-4216-A217-5458049BA0A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comum", "Comum", "{AFF90A4A-8849-4619-B9D3-3A5DDA0C956E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlus.Comum.Repositorios.Interfaces", "ProPlus.Comum.Repositorios.Interfaces\ProPlus.Comum.Repositorios.Interfaces.csproj", "{2ACBC0C3-ABE5-4AA4-80CB-2A72A9DE1553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlus.Comum.Repositorios.Entity", "ProPlus.Comum.Repositorios.Entity\ProPlus.Comum.Repositorios.Entity.csproj", "{F4354033-61A0-44AC-B27A-29BF225BD316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlus.APIWeb.SchoolPlus.Repositorios.Entity", "ProPlus.APIWeb.SchoolPlus.Repositorios.Entity\ProPlus.APIWeb.SchoolPlus.Repositorios.Entity.csproj", "{C1A75946-A11A-4E55-B7CF-C0F7DA25E909}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,25 @@ Global
 		{A69CEE77-BB4E-4216-A217-5458049BA0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A69CEE77-BB4E-4216-A217-5458049BA0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A69CEE77-BB4E-4216-A217-5458049BA0A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACBC0C3-ABE5-4AA4-80CB-2A72A9DE1553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACBC0C3-ABE5-4AA4-80CB-2A72A9DE1553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACBC0C3-ABE5-4AA4-80CB-2A72A9DE1553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACBC0C3-ABE5-4AA4-80CB-2A72A9DE1553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4354033-61A0-44AC-B27A-29BF225BD316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4354033-61A0-44AC-B27A-29BF225BD316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4354033-61A0-44AC-B27A-29BF225BD316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4354033-61A0-44AC-B27A-29BF225BD316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1A75946-A11A-4E55-B7CF-C0F7DA25E909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A75946-A11A-4E55-B7CF-C0F7DA25E909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A75946-A11A-4E55-B7CF-C0F7DA25E909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A75946-A11A-4E55-B7CF-C0F7DA25E909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ACBC0C3-ABE5-4AA4-80CB-2A72A9DE1553} = {AFF90A4A-8849-4619-B9D3-3A5DDA0C956E}
+		{F4354033-61A0-44AC-B27A-29BF225BD316} = {AFF90A4A-8849-4619-B9D3-3A5DDA0C956E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {373633F7-AE2F-419C-B8F7-D6EF5F6264B2}

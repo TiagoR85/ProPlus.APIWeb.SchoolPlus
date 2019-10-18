@@ -1,21 +1,23 @@
 ﻿using ProPlus.ApiWeb.SchoolPlus.Dominio.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 {
     public class Endereco : IEndereco
     {
-        public int EnderecoId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Logradouro { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Bairro { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double Latitude { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double Longitude { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Enums.TipoEndereco TipoEndereco { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Nro { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IMunicipio Municipio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Enums.Estado Estado { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Pais { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int EnderecoId { get; set; }
+        public string Logradouro { get; set; }
+        public string Bairro { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public Enums.TipoEndereco TipoEndereco { get; set; }
+        public string Nro { get; set; }
+        [NotMapped]
+        public IMunicipio Municipio { get; set; }
+        public int MunicipioID { get; set; }
+        public Enums.Estado Estado { get; set; }
+        public string Pais { get; set; }
+        public int InstituicaoID { get; set; }
+        public int UsuarioID { get; set; }
     }
 }

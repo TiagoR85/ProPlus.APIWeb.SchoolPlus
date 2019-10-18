@@ -7,8 +7,8 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 {
     public class Pontuacao : IPontuacao
     {
-        public int PontuacaoID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int UsuarioID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string NomeJogo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int PontuacaoID { get; set; }
+        public int UsuarioID { get; set; }
+        public string NomeJogo { get; set; }
     }
 }

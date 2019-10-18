@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity.DBContext;
+using ProPlus.APIWeb.SchoolPlus.DbContext;
 
 namespace ProPlus.APIWeb.SchoolPlus
 {
@@ -28,8 +28,8 @@ namespace ProPlus.APIWeb.SchoolPlus
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            // services.AddDbContext<SchoolPlusDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SchoolPlusDbContext")));
-            services.AddDbContext<SchoolPlusDbContext>();
+            services.AddDbContext<SchoolPlusDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SchoolPlusDbContext")));
+            //services.AddDbContext<SchoolPlusDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,11 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using ProPlus.ApiWeb.SchoolPlus.Dominio.Models;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity.DBContext
+namespace ProPlus.APIWeb.SchoolPlus.DbContext
 {
-    public class SchoolPlusDbContext : DbContext
+    public class SchoolPlusDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
         public SchoolPlusDbContext(DbContextOptions<SchoolPlusDbContext> opts) : base(opts) { }
         public DbSet<Usuario> Usuarios { get; set; }
@@ -22,16 +26,16 @@ namespace ProPlus.APIWeb.SchoolPlus.AcessoDados.Entity.DBContext
         public DbSet<Telefone> Telefones { get; set; }
         public DbSet<Instituicao> Instituicoes { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                var builder = new ConfigurationBuilder()
-                                    .SetBasePath(Directory.GetCurrentDirectory())
-                                    .AddJsonFile("connectionString.json");
-                var configuration = builder.Build();
-                optionsBuilder.UseSqlServer(configuration["ConnectionStrings:SchoolPlusDbContext"]);
-            }
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    if (!optionsBuilder.IsConfigured)
+        //    {
+        //        var builder = new ConfigurationBuilder()
+        //                            .SetBasePath(Directory.GetCurrentDirectory())
+        //                            .AddJsonFile("connectionString.json");
+        //        var configuration = builder.Build();
+        //        optionsBuilder.UseSqlServer(configuration["ConnectionStrings:SchoolPlusDbContext"]);
+        //    }
+        //}
     }
 }

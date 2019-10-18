@@ -5,7 +5,8 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Interfaces
 {
     public interface IDadosEscolares
     {
-        public int EscolarID { get; set; }
+        public int UsuarioID { get; set; }
+        public int DadosEscolaresID { get; set; }
         public string Serie { get; set; }
         public string NroSala { get; set; }
         public IList<IDisciplina> Disciplinas { get; set; }

@@ -1,12 +1,11 @@
 ﻿using ProPlus.ApiWeb.SchoolPlus.Dominio.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 {
     public class Responsavel : IResponsavel
     {
-        public IPessoa Usuario { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int ResponsavelID { get; set; }
+        public IPessoa Usuario { get; set; }
+        public int UsuarioID { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Models
 
         [NotMapped]
         public IList<IMembro> Membros { get; set; }
+        [NotMapped]
         public IDadosVisual Imagem { get; set; }
     }
 }
