@@ -15,6 +15,8 @@ namespace ProPlus.APIWeb.SchoolPlus.DbContext
         public DbSet<DadosGamefication> DadosGamefications { get; set; }
         public DbSet<DadosVisual> DadosVisuals { get; set; }
         public DbSet<Disciplina> Disciplinas { get; set; }
+        public DbSet<Questionario> Questionarios { get; set; }
+        public DbSet<Resposta> Respostas { get; set; }
         public DbSet<Email> Emails { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Equipe> Equipes { get; set; }
@@ -33,7 +35,6 @@ namespace ProPlus.APIWeb.SchoolPlus.DbContext
                 var configuration = builder.Build();
                 optionsBuilder.UseSqlServer(configuration["ConnectionStrings:SchoolPlusDbContext"]);
             }
-            //base.OnConfiguring(optionsBuilder);
         }
     }
 }

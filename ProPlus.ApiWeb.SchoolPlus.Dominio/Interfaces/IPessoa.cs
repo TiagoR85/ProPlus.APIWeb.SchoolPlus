@@ -13,10 +13,10 @@ namespace ProPlus.ApiWeb.SchoolPlus.Dominio.Interfaces
         public Sexo Sexualidade { get; set; }
         public int Altura_cm { get; set; }
         public int Peso_g { get; set; }
-        public IList<IEndereco> Endereços { get; set; }
-        public IList<IEmail> Emails { get; set; }
-        public IList<ITelefone> Telefones { get; set; }
-        public IList<IResponsavel> Responsaveis { get; set; }
+        public List<IEndereco> Endereços { get; set; }
+        public List<IEmail> Emails { get; set; }
+        public List<ITelefone> Telefones { get; set; }
+        public List<IResponsavel> Responsaveis { get; set; }
         public IDadosEscolares DadosEscolares { get; set; }
         public IDadosGamefication DadosGamefication { get; set; }
         public bool Ativo { get; set; }

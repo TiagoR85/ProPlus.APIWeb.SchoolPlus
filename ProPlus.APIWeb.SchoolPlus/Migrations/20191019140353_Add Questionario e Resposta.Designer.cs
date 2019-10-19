@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProPlus.APIWeb.SchoolPlus.DbContext;
 
 namespace ProPlus.APIWeb.SchoolPlus.Migrations
 {
     [DbContext(typeof(SchoolPlusDbContext))]
-    partial class SchoolPlusDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191019140353_Add Questionario e Resposta")]
+    partial class AddQuestionarioeResposta
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

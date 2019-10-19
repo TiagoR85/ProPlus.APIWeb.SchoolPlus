@@ -11,10 +11,10 @@ namespace ProPlus.APIWeb.SchoolPlus.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UsuariosController : ControllerBase
     {
         private IRepositorioComum<Usuario, int> repositorioUsuario;
-        public UsuarioController()
+        public UsuariosController()
         {
             repositorioUsuario = new RepositorioUsuario(new SchoolPlusDbContext());
         }
