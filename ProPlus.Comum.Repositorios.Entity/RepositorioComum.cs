@@ -44,7 +44,7 @@ namespace ProPlus.Comum.Repositorios.Entity
         public List<TDominio> Selecionar(Expression<Func<TDominio, bool>> where = null)
         {
             DbSet<TDominio> DbSet = _context.Set<TDominio>();
-            if (where.Equals(null))
+            if (where == null)
             {
                 return DbSet.ToList();
             }

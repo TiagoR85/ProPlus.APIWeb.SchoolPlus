@@ -27,9 +27,9 @@ namespace ProPlus.APIWeb.SchoolPlus
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string conexao = Configuration.GetConnectionString("SchoolPlusDbContext");
+            var collection = services.AddDbContext<SchoolPlusDbContext>(options => options.UseSqlServer(conexao));
             services.AddControllers();
-            services.AddDbContext<SchoolPlusDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SchoolPlusDbContext")));
-            //services.AddDbContext<SchoolPlusDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
