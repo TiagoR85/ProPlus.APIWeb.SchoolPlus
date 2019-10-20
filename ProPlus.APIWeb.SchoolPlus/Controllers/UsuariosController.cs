@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProPlus.ApiWeb.SchoolPlus.Dominio.Models;
 using ProPlus.APIWeb.SchoolPlus.AutoMapper;
+using ProPlus.APIWeb.SchoolPlus.Business;
 using ProPlus.APIWeb.SchoolPlus.DbContext;
 using ProPlus.APIWeb.SchoolPlus.Dto;
 using ProPlus.APIWeb.SchoolPlus.Repositorios;
@@ -16,6 +17,7 @@ namespace ProPlus.APIWeb.SchoolPlus.Controllers
         private IRepositorioComum<Usuario, int> repositorioUsuario;
         public UsuariosController()
         {
+            WatsonBusiness watson = new WatsonBusiness();
             repositorioUsuario = new RepositorioUsuario(new SchoolPlusDbContext());
         }
 
